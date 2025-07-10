@@ -73,7 +73,7 @@ const ScriptsManager: React.FC = () => {
       const mockKnowledge: KnowledgeBase[] = [
         {
           id: '1',
-          title: 'Información del Proyecto Selva Dentro',
+          title: 'Información del Proyecto Real Estate',
           category: 'proyecto',
           content: `Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya...`,
           tags: ['proyecto', 'precios', 'amenidades', 'unidades'],
@@ -157,7 +157,7 @@ const ScriptsManager: React.FC = () => {
     const mockKnowledge: KnowledgeBase[] = [
       {
         id: '1',
-        title: 'Información del Proyecto Selva Dentro',
+        title: 'Información del Proyecto Real Estate',
         category: 'proyecto',
         content: `Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
 

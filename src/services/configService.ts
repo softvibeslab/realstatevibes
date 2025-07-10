@@ -207,7 +207,7 @@ class ConfigService {
         timestamp: new Date().toISOString(),
         source: 'real_estate_dashboard',
         data: {
-          message: 'Test webhook from Selva Dentro Dashboard',
+          message: 'Test webhook from Real Estate Dashboard',
         },
       };
 

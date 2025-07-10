@@ -58,7 +58,7 @@ Perfecto. Para poder ayudarte de la mejor manera, me gustaría conocerte un poco
 
 [PAUSA PARA ESCUCHAR]
 
-Excelente, basado en lo que me comentas, creo que tenemos opciones perfectas para ti. Selva Dentro es un desarrollo único que combina la magia de la selva con amenidades de lujo...',
+Excelente, basado en lo que me comentas, creo que tenemos opciones perfectas para ti. Real Estate es un desarrollo único que combina la magia de la selva con amenidades de lujo...',
      ARRAY['NOMBRE_CLIENTE', 'NOMBRE_AGENTE'], 
      '550e8400-e29b-41d4-a716-446655440006',
      ARRAY['descubrimiento', 'inicial', 'tulum']),
@@ -119,7 +119,7 @@ ON CONFLICT DO NOTHING;
 -- BASE DE CONOCIMIENTOS
 -- =============================================
 INSERT INTO knowledge_base (id, title, category, content, tags, priority, created_by) VALUES
-    ('990e8400-e29b-41d4-a716-446655440001', 'Información del Proyecto Selva Dentro', 'proyecto',
+    ('990e8400-e29b-41d4-a716-446655440001', 'Información del Proyecto Real Estate', 'proyecto',
      'Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
 
 **Características Principales:**

@@ -101,7 +101,7 @@ const Layout: React.FC<LayoutProps> = ({ children, currentPage, onPageChange }) 
             <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-teal-600 rounded-lg flex items-center justify-center">
               <Building2 className="w-5 h-5 text-white" />
             </div>
-            <span className="text-lg font-bold text-slate-900">Selva Dentro</span>
+            <span className="text-lg font-bold text-slate-900">Real Estate</span>
           </div>
           <button
             onClick={() => setSidebarOpen(false)}

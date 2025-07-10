@@ -88,7 +88,7 @@ ON CONFLICT (id) DO NOTHING;
 -- =============================================
 INSERT INTO scripts (id, name, type, content, variables, created_by, tags, effectiveness_score, usage_count) VALUES
     ('880e8400-e29b-41d4-a716-446655440004', 'Script de Cierre - Apartado', 'closing',
-     'Perfecto [NOMBRE_CLIENTE], veo que Selva Dentro es exactamente lo que buscas.
+     'Perfecto [NOMBRE_CLIENTE], veo que Real Estate es exactamente lo que buscas.
 
 Para asegurar tu unidad preferida, el proceso es muy sencillo:
 
@@ -116,7 +116,7 @@ Una vez firmado, coordinamos la visita a las instalaciones para que conozcas per
     ('880e8400-e29b-41d4-a716-446655440005', 'Script Post-Presentación', 'closing',
      'Gracias [NOMBRE_CLIENTE] por tu tiempo en la presentación.
 
-¿Qué fue lo que más te gustó de Selva Dentro?
+¿Qué fue lo que más te gustó de Real Estate?
 
 [PAUSA PARA ESCUCHAR]
 
@@ -141,7 +141,7 @@ Entiendo que es una inversión importante. ¿Hay alguna pregunta específica que
 
 [NOMBRE_REFERIDOR] me comentó que podrías estar interesado en conocer sobre nuestros desarrollos en Tulum. ¡Qué buena referencia!
 
-[NOMBRE_REFERIDOR] ya es parte de nuestra familia Selva Dentro y está muy contento con su inversión.
+[NOMBRE_REFERIDOR] ya es parte de nuestra familia Real Estate y está muy contento con su inversión.
 
 Me gustaría platicar contigo sobre las oportunidades que tenemos disponibles. ¿Tienes unos minutos?
 
@@ -265,7 +265,7 @@ ON CONFLICT (id) DO NOTHING;
 -- KNOWLEDGE BASE ADICIONAL
 -- =============================================
 INSERT INTO knowledge_base (id, title, category, content, tags, priority, created_by, usage_count) VALUES
-    ('990e8400-e29b-41d4-a716-446655440004', 'Amenidades Premium de Selva Dentro', 'amenidades',
+    ('990e8400-e29b-41d4-a716-446655440004', 'Amenidades Premium de Real Estate', 'amenidades',
      '**Beach Club Exclusivo:**
 - Acceso privado a 150 metros de playa
 - Servicio de toallas y camastros

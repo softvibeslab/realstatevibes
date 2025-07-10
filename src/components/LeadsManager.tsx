@@ -496,7 +496,7 @@ const LeadsManager: React.FC = () => {
                   <h4 className="font-semibold text-slate-900 mb-2">Propuesta de Valor</h4>
                   <div className="bg-slate-50 rounded-lg p-4">
                     <p className="text-slate-700">
-                      "Perfecto, basado en lo que me comentas, creo que Selva Dentro podría ser exactamente lo que buscas. 
+                      "Perfecto, basado en lo que me comentas, creo que Real Estate podría ser exactamente lo que buscas. 
                       Tenemos {selectedLead.interests.includes('Penthouse') ? 'penthouses exclusivos' : 'departamentos'} 
                       que se alinean con tu presupuesto de ${selectedLead.budget.toLocaleString()} MXN. 
                       Lo que hace único a nuestro desarrollo es..."
