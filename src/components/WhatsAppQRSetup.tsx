@@ -25,7 +25,7 @@ interface WhatsAppQRSetupProps {
 }
 
 const WhatsAppQRSetup: React.FC<WhatsAppQRSetupProps> = ({ 
-  instanceName = 'selvadentro',
+  instanceName = 'real_estate',
   onConnectionChange,
   showAdvanced = false
 }) => {

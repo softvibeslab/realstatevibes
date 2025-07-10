@@ -13,12 +13,12 @@
 -- USUARIOS INICIALES
 -- =============================================
 INSERT INTO users (id, name, email, role, avatar, permissions) VALUES
-    ('550e8400-e29b-41d4-a716-446655440001', 'Mafer', 'mafer@selvadentro.com', 'broker', 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440002', 'Mariano', 'mariano@selvadentro.com', 'broker', 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440003', 'Pablo', 'pablo@selvadentro.com', 'broker', 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440004', 'Jaquelite', 'jaquelite@selvadentro.com', 'broker', 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440005', 'Raquel', 'raquel@selvadentro.com', 'broker', 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440006', 'Admin', 'admin@selvadentro.com', 'admin', 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['*'])
+    ('550e8400-e29b-41d4-a716-446655440001', 'Mafer', 'mafer@real_estate.com', 'broker', 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
+    ('550e8400-e29b-41d4-a716-446655440002', 'Mariano', 'mariano@real_estate.com', 'broker', 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
+    ('550e8400-e29b-41d4-a716-446655440003', 'Pablo', 'pablo@real_estate.com', 'broker', 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
+    ('550e8400-e29b-41d4-a716-446655440004', 'Jaquelite', 'jaquelite@real_estate.com', 'broker', 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
+    ('550e8400-e29b-41d4-a716-446655440005', 'Raquel', 'raquel@real_estate.com', 'broker', 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
+    ('550e8400-e29b-41d4-a716-446655440006', 'Admin', 'admin@real_estate.com', 'admin', 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['*'])
 ON CONFLICT (email) DO NOTHING;
 
 -- =============================================
@@ -203,7 +203,7 @@ INSERT INTO integrations (id, name, type, status, config) VALUES
     ('aa0e8400-e29b-41d4-a716-446655440003', 'n8n Workflows', 'n8n', 'disconnected',
      '{"syncFrequency": 300}'),
     ('aa0e8400-e29b-41d4-a716-446655440004', 'WhatsApp Business', 'whatsapp', 'disconnected',
-     '{"type": "evolution-api", "instanceName": "selvadentro"}')
+     '{"type": "evolution-api", "instanceName": "real_estate"}')
 ON CONFLICT DO NOTHING;
 
 -- =============================================

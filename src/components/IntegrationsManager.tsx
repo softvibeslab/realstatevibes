@@ -256,7 +256,7 @@ const IntegrationsManager: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `selvadentro-integrations-${new Date().toISOString().split('T')[0]}.json`;
+    a.download = `real_estate-integrations-${new Date().toISOString().split('T')[0]}.json`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -766,7 +766,7 @@ const IntegrationsManager: React.FC = () => {
             
             <div className="p-6">
               <WhatsAppQRSetup 
-                instanceName="selvadentro"
+                instanceName="real_estate"
                 showAdvanced={true}
                 onConnectionChange={(connected) => {
                   console.log('WhatsApp connection changed:', connected);

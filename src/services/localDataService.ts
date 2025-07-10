@@ -3,14 +3,14 @@ import { format } from 'date-fns';
 
 // Datos locales simulados
 const STORAGE_KEYS = {
-  USERS: 'selvadentro_users',
-  LEADS: 'selvadentro_leads',
-  MEETINGS: 'selvadentro_meetings',
-  CALLS: 'selvadentro_calls',
-  SCRIPTS: 'selvadentro_scripts',
-  ACTIVITIES: 'selvadentro_activities',
-  POINTS: 'selvadentro_points',
-  NOTIFICATIONS: 'selvadentro_notifications'
+  USERS: 'real_estate_users',
+  LEADS: 'real_estate_leads',
+  MEETINGS: 'real_estate_meetings',
+  CALLS: 'real_estate_calls',
+  SCRIPTS: 'real_estate_scripts',
+  ACTIVITIES: 'real_estate_activities',
+  POINTS: 'real_estate_points',
+  NOTIFICATIONS: 'real_estate_notifications'
 };
 
 class LocalDataService {
@@ -45,7 +45,7 @@ class LocalDataService {
       {
         id: '1',
         name: 'Mafer',
-        email: 'mafer@selvadentro.com',
+        email: 'mafer@real_estate.com',
         role: 'broker',
         avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -54,7 +54,7 @@ class LocalDataService {
       {
         id: '2',
         name: 'Mariano',
-        email: 'mariano@selvadentro.com',
+        email: 'mariano@real_estate.com',
         role: 'broker',
         avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -63,7 +63,7 @@ class LocalDataService {
       {
         id: '3',
         name: 'Pablo',
-        email: 'pablo@selvadentro.com',
+        email: 'pablo@real_estate.com',
         role: 'broker',
         avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -72,7 +72,7 @@ class LocalDataService {
       {
         id: '4',
         name: 'Jaquelite',
-        email: 'jaquelite@selvadentro.com',
+        email: 'jaquelite@real_estate.com',
         role: 'broker',
         avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -81,7 +81,7 @@ class LocalDataService {
       {
         id: '5',
         name: 'Raquel',
-        email: 'raquel@selvadentro.com',
+        email: 'raquel@real_estate.com',
         role: 'broker',
         avatar: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -90,7 +90,7 @@ class LocalDataService {
       {
         id: '6',
         name: 'Admin',
-        email: 'admin@selvadentro.com',
+        email: 'admin@real_estate.com',
         role: 'admin',
         avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['*'],
@@ -842,7 +842,7 @@ Permíteme ponerte en perspectiva:
         id: '4',
         name: 'whatsapp',
         status: 'error',
-        config: { type: 'evolution-api', instanceName: 'selvadentro' },
+        config: { type: 'evolution-api', instanceName: 'real_estate' },
         last_sync: new Date()
       }
     ];

@@ -663,7 +663,7 @@ class SupabaseService {
         const demoUsers = [
           {
             name: 'Mafer',
-            email: 'mafer@selvadentro.com',
+            email: 'mafer@real_estate.com',
             role: 'broker',
             avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
             permissions: ['leads:read', 'leads:write', 'meetings:read', 'meetings:write'],
@@ -671,7 +671,7 @@ class SupabaseService {
           },
           {
             name: 'Admin',
-            email: 'admin@selvadentro.com',
+            email: 'admin@real_estate.com',
             role: 'admin',
             avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
             permissions: ['*'],

@@ -21,7 +21,7 @@
 UPDATE users SET 
   last_login = NOW() - INTERVAL '2 hours',
   is_active = true
-WHERE email IN ('mafer@selvadentro.com', 'mariano@selvadentro.com', 'pablo@selvadentro.com', 'jaquelite@selvadentro.com', 'raquel@selvadentro.com', 'admin@selvadentro.com');
+WHERE email IN ('mafer@real_estate.com', 'mariano@real_estate.com', 'pablo@real_estate.com', 'jaquelite@real_estate.com', 'raquel@real_estate.com', 'admin@real_estate.com');
 
 -- =============================================
 -- LEADS ADICIONALES DE EJEMPLO

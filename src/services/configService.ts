@@ -29,8 +29,8 @@ interface WebhookConfiguration {
 }
 
 class ConfigService {
-  private readonly STORAGE_KEY_APIS = 'selvadentro_api_configs';
-  private readonly STORAGE_KEY_WEBHOOKS = 'selvadentro_webhook_configs';
+  private readonly STORAGE_KEY_APIS = 'real_estate_api_configs';
+  private readonly STORAGE_KEY_WEBHOOKS = 'real_estate_webhook_configs';
 
   // API Configuration Management
   getApiConfigurations(): ApiConfiguration[] {
@@ -205,7 +205,7 @@ class ConfigService {
       const testPayload = {
         test: true,
         timestamp: new Date().toISOString(),
-        source: 'selvadentro_dashboard',
+        source: 'real_estate_dashboard',
         data: {
           message: 'Test webhook from Selva Dentro Dashboard',
         },
@@ -339,7 +339,7 @@ class ConfigService {
           type: 'evolution-api',
           baseUrl: import.meta.env.VITE_EVOLUTION_API_BASE_URL || 'http://localhost:8080',
           apiKey: import.meta.env.VITE_EVOLUTION_API_KEY || '',
-          instanceName: import.meta.env.VITE_EVOLUTION_INSTANCE_NAME || 'selvadentro',
+          instanceName: import.meta.env.VITE_EVOLUTION_INSTANCE_NAME || 'real_estate',
         },
         isActive: true,
         createdAt: new Date(),

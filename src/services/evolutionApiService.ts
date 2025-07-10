@@ -516,7 +516,7 @@ Aquí tienes toda la información detallada sobre este increíble desarrollo.
 const defaultConfig: EvolutionApiConfig = {
   baseUrl: import.meta.env.VITE_EVOLUTION_API_BASE_URL || 'http://localhost:8080',
   apiKey: import.meta.env.VITE_EVOLUTION_API_KEY || '',
-  instanceName: import.meta.env.VITE_EVOLUTION_INSTANCE_NAME || 'selvadentro',
+  instanceName: import.meta.env.VITE_EVOLUTION_INSTANCE_NAME || 'real_estate',
 };
 
 export const evolutionApiService = new EvolutionApiService(defaultConfig);

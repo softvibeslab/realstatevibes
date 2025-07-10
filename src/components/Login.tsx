@@ -58,8 +58,8 @@ const Login: React.FC = () => {
             <div className="bg-slate-50 rounded-lg p-4 mb-6">
               <h3 className="text-sm font-semibold text-slate-700 mb-2">Credenciales de prueba:</h3>
               <div className="text-xs text-slate-600 space-y-1">
-                <p><strong>Brokers:</strong> mafer@selvadentro.com, mariano@selvadentro.com, pablo@selvadentro.com, jaquelite@selvadentro.com, raquel@selvadentro.com</p>
-                <p><strong>Admin:</strong> admin@selvadentro.com</p>
+                <p><strong>Brokers:</strong> mafer@real_estate.com, mariano@real_estate.com, pablo@real_estate.com, jaquelite@real_estate.com, raquel@real_estate.com</p>
+                <p><strong>Admin:</strong> admin@real_estate.com</p>
                 <p><strong>Contraseña:</strong> password123</p>
               </div>
             </div>
@@ -100,7 +100,7 @@ const Login: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                  placeholder={mode === 'login' ? 'tu@selvadentro.com' : 'tu@email.com'}
+                  placeholder={mode === 'login' ? 'tu@real_estate.com' : 'tu@email.com'}
                   required
                 />
               </div>

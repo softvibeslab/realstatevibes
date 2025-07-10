@@ -83,7 +83,7 @@ const SupabaseStatus: React.FC<SupabaseStatusProps> = ({ compact = false }) => {
             <div className="flex items-center justify-between">
               <p className="text-slate-600 font-medium">URL</p>
               <a 
-                href="https://evolutionvibes-selvadentro.gwhncw.easypanel.host/" 
+                href="https://evolutionvibes-real_estate.gwhncw.easypanel.host/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700"
