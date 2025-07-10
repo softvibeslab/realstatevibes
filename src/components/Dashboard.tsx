@@ -223,7 +223,7 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-slate-600">Puntos del Mes</p>
+                <p className="text-sm font-medium text-slate-600">Leads Generados</p>
                 <p className="text-3xl font-bold text-slate-900">{totalMonthlyPoints}</p>
                 <div className="flex items-center mt-2">
                   <div className="flex-1 bg-slate-200 rounded-full h-2 mr-2">
@@ -236,7 +236,7 @@ const Dashboard: React.FC = () => {
                     {Math.round(pointsProgress)}%
                   </span>
                 </div>
-                <p className="text-xs text-slate-500 mt-1">Meta: {pointsGoal} puntos</p>
+                <p className="text-xs text-slate-500 mt-1">Meta: {pointsGoal} leads</p>
               </div>
               <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center">
                 <Trophy className="w-6 h-6 text-teal-600" />
@@ -247,11 +247,11 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-slate-600">Apartados</p>
+                <p className="text-sm font-medium text-slate-600">Propiedades en Proceso</p>
                 <p className="text-3xl font-bold text-slate-900">{totalBookings}</p>
                 <p className="text-sm text-blue-600 flex items-center mt-1">
                   <Handshake className="w-4 h-4 mr-1" />
-                  {Math.round((totalBookings / 15) * 100)}% de meta estimada
+                  {Math.round((totalBookings / 15) * 100)}% de propiedades en proceso
                 </p>
               </div>
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
@@ -263,7 +263,7 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-slate-600">Ventas</p>
+                <p className="text-sm font-medium text-slate-600">Propiedades Vendidas</p>
                 <p className="text-3xl font-bold text-slate-900">{totalSales}</p>
                 <div className="flex items-center mt-2">
                   <div className="flex-1 bg-slate-200 rounded-full h-2 mr-2">
@@ -276,7 +276,7 @@ const Dashboard: React.FC = () => {
                     {Math.round(salesProgress)}%
                   </span>
                 </div>
-                <p className="text-xs text-slate-500 mt-1">Meta: {salesGoal} ventas</p>
+                <p className="text-xs text-slate-500 mt-1">Meta: {salesGoal} propiedades</p>
               </div>
               <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
                 <DollarSign className="w-6 h-6 text-amber-600" />
@@ -424,54 +424,54 @@ const Dashboard: React.FC = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Presentations Points */}
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Presentaciones</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Actividades de Captación</h3>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <Video className="w-5 h-5 text-blue-600" />
-                        <span className="text-sm font-medium">Zoom Broker</span>
+                        <span className="text-sm font-medium">Reunión Virtual con Agente</span>
                       </div>
                       <span className="text-sm font-bold text-blue-600">1 punto</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <Users className="w-5 h-5 text-purple-600" />
-                        <span className="text-sm font-medium">Eventos Broker</span>
+                        <span className="text-sm font-medium">Eventos de Captación</span>
                       </div>
                       <span className="text-sm font-bold text-purple-600">1 punto</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <Video className="w-5 h-5 text-indigo-600" />
-                        <span className="text-sm font-medium">Zoom Inmobiliarias (+3)</span>
+                        <span className="text-sm font-medium">Reunión Virtual con Inmobiliarias (+3)</span>
                       </div>
                       <span className="text-sm font-bold text-indigo-600">2 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <Video className="w-5 h-5 text-green-600" />
-                        <span className="text-sm font-medium">Zoom Cliente Final</span>
+                        <span className="text-sm font-medium">Reunión Virtual con Cliente Final</span>
                       </div>
                       <span className="text-sm font-bold text-green-600">3 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <MapPin className="w-5 h-5 text-teal-600" />
-                        <span className="text-sm font-medium">Física Broker</span>
+                        <span className="text-sm font-medium">Reunión Presencial con Agente</span>
                       </div>
                       <span className="text-sm font-bold text-teal-600">3 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <MapPin className="w-5 h-5 text-orange-600" />
-                        <span className="text-sm font-medium">Física Inmobiliarias (+3)</span>
+                        <span className="text-sm font-medium">Reunión Presencial con Inmobiliarias (+3)</span>
                       </div>
-                      <span className="text-sm font-bold text-orange-600">4 puntos</span>
+                      <span className="text-sm font-bold text-orange-600">+5 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <MapPin className="w-5 h-5 text-red-600" />
-                        <span className="text-sm font-medium">Física Cliente Final</span>
+                        <span className="text-sm font-medium">Reunión Presencial con Cliente Final</span>
                       </div>
                       <span className="text-sm font-bold text-red-600">5 puntos</span>
                     </div>
@@ -480,42 +480,37 @@ const Dashboard: React.FC = () => {
 
                 {/* Results Points */}
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Resultados</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Resultados de Cierre</h3>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
                       <div className="flex items-center space-x-3">
                         <Handshake className="w-6 h-6 text-blue-600" />
-                        <span className="font-medium text-blue-900">Apartado</span>
+                        <span className="text-sm font-medium">Propiedad Apartada</span>
                       </div>
-                      <span className="text-lg font-bold text-blue-600">10 puntos</span>
+                      <span className="text-sm font-bold text-blue-600">10 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
                       <div className="flex items-center space-x-3">
                         <Users className="w-6 h-6 text-amber-600" />
-                        <span className="font-medium text-amber-900">Venta Alianza/Broker</span>
+                        <span className="text-sm font-medium">Venta por Colaboración</span>
                       </div>
                       <span className="text-lg font-bold text-amber-600">+5 puntos</span>
                     </div>
                     <div className="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg border border-green-200">
                       <div className="flex items-center space-x-3">
                         <DollarSign className="w-6 h-6 text-green-600" />
-                        <span className="font-medium text-green-900">Venta Propia</span>
+                        <span className="text-sm font-medium">Venta Directa</span>
                       </div>
-                      <span className="text-lg font-bold text-green-600">+10 puntos</span>
-                    </div>
+                      <span className="text-sm font-bold text-green-600">+10 puntos</span>
                   </div>
 
-                  <div className="mt-6 p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg border border-teal-200">
-                    <h4 className="font-semibold text-teal-900 mb-2">Meta Grupal</h4>
-                    <div className="space-y-2 text-sm text-teal-700">
-                      <div className="flex items-center justify-between">
-                        <span>Puntos del mes:</span>
-                        <span className="font-bold">{totalMonthlyPoints} / {pointsGoal}</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span>Ventas del mes:</span>
-                        <span className="font-bold">{totalSales} / {salesGoal}</span>
-                      </div>
+                  </div>
+ 
+                   <div className="mt-6 p-4 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-lg border border-teal-200">
+                       <h4 className="font-semibold text-teal-900 mb-2">Meta Grupal</h4>
+                       <div className="space-y-2 text-sm text-teal-700">
+                         <p>Leads del mes: <span className="font-bold">{totalMonthlyPoints}/{pointsGoal}</span></p>
+                         <p>Propiedades Vendidas del mes: <span className="font-bold">{totalSales}/{salesGoal}</span></p>
                     </div>
                   </div>
 
