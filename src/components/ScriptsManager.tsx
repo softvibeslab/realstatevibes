@@ -75,7 +75,7 @@ const ScriptsManager: React.FC = () => {
           id: '1',
           title: 'Información del Proyecto Selva Dentro',
           category: 'proyecto',
-          content: `Selva Dentro Tulum es un desarrollo residencial de lujo ubicado en la Riviera Maya...`,
+          content: `Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya...`,
           tags: ['proyecto', 'precios', 'amenidades', 'unidades'],
           isActive: true,
           priority: 'high',
@@ -159,7 +159,7 @@ const ScriptsManager: React.FC = () => {
         id: '1',
         title: 'Información del Proyecto Selva Dentro',
         category: 'proyecto',
-        content: `Selva Dentro Tulum es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
+        content: `Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
 
 **Características Principales:**
 - 120 unidades distribuidas en 3 torres

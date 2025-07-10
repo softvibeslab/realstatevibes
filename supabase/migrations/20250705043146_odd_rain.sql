@@ -1,5 +1,5 @@
 /*
-  # Datos Demo Completos para Selva Dentro Tulum
+  # Datos Demo Completos para Real Estate CRM
 
   1. Usuarios adicionales con contraseñas
   2. Leads de ejemplo con datos realistas
@@ -137,7 +137,7 @@ Entiendo que es una inversión importante. ¿Hay alguna pregunta específica que
      ARRAY['post-presentacion', 'cierre', 'seguimiento'], 85, 34),
 
     ('880e8400-e29b-41d4-a716-446655440006', 'Script para Referidos', 'discovery',
-     'Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Selva Dentro Tulum.
+     'Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Real Estate CRM.
 
 [NOMBRE_REFERIDOR] me comentó que podrías estar interesado en conocer sobre nuestros desarrollos en Tulum. ¡Qué buena referencia!
 

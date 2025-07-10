@@ -198,7 +198,7 @@ const Dashboard: React.FC = () => {
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">Selva Dentro Tulum</h1>
+                <h1 className="text-2xl font-bold text-slate-900">Real Estate CRM</h1>
                 <p className="text-slate-600">Sistema de Puntos y Ventas</p>
               </div>
             </div>

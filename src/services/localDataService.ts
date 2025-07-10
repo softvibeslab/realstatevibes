@@ -370,7 +370,7 @@ class LocalDataService {
         id: '1',
         name: 'Script de Descubrimiento - Tulum',
         type: 'discovery',
-        content: `Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Selva Dentro Tulum.
+        content: `Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Real Estate CRM.
 
 Te contacto porque veo que has mostrado interés en nuestros desarrollos en Tulum. ¿Tienes unos minutos para platicar?
 

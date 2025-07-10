@@ -1,5 +1,5 @@
 /*
-  # Datos Iniciales - Selva Dentro Tulum
+  # Datos Iniciales - Real Estate CRM
 
   1. Usuarios del sistema
   2. Pipeline por defecto
@@ -25,7 +25,7 @@ ON CONFLICT (email) DO NOTHING;
 -- PIPELINE POR DEFECTO
 -- =============================================
 INSERT INTO pipelines (id, name, description, is_active, is_default, created_by) VALUES
-    ('660e8400-e29b-41d4-a716-446655440001', 'Pipeline Principal de Ventas', 'Pipeline principal para el proceso de ventas de Selva Dentro Tulum', true, true, '550e8400-e29b-41d4-a716-446655440006')
+    ('660e8400-e29b-41d4-a716-446655440001', 'Pipeline Principal de Ventas', 'Pipeline principal para el proceso de ventas de Real Estate CRM', true, true, '550e8400-e29b-41d4-a716-446655440006')
 ON CONFLICT DO NOTHING;
 
 -- Etapas del pipeline
@@ -44,7 +44,7 @@ ON CONFLICT DO NOTHING;
 -- =============================================
 INSERT INTO scripts (id, name, type, content, variables, created_by, tags) VALUES
     ('880e8400-e29b-41d4-a716-446655440001', 'Script de Descubrimiento - Tulum', 'discovery', 
-     'Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Selva Dentro Tulum.
+     'Hola [NOMBRE_CLIENTE], habla [NOMBRE_AGENTE] de Real Estate CRM.
 
 Te contacto porque veo que has mostrado interés en nuestros desarrollos en Tulum. ¿Tienes unos minutos para platicar?
 
@@ -120,7 +120,7 @@ ON CONFLICT DO NOTHING;
 -- =============================================
 INSERT INTO knowledge_base (id, title, category, content, tags, priority, created_by) VALUES
     ('990e8400-e29b-41d4-a716-446655440001', 'Información del Proyecto Selva Dentro', 'proyecto',
-     'Selva Dentro Tulum es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
+     'Real Estate CRM es un desarrollo residencial de lujo ubicado en la Riviera Maya, específicamente en Tulum, Quintana Roo.
 
 **Características Principales:**
 - 120 unidades distribuidas en 3 torres

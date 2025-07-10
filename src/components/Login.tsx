@@ -47,7 +47,7 @@ const Login: React.FC = () => {
             <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Building2 className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-slate-900">Selva Dentro Tulum</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Welcome</h1>
             <p className="text-slate-600 mt-2">
               {mode === 'login' ? 'Accede a tu dashboard de ventas' : 'Crear nueva cuenta'}
             </p>

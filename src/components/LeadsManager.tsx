@@ -469,7 +469,7 @@ const LeadsManager: React.FC = () => {
                   <h4 className="font-semibold text-slate-900 mb-2">Apertura</h4>
                   <div className="bg-slate-50 rounded-lg p-4">
                     <p className="text-slate-700">
-                      "Hola {selectedLead.name}, habla [Tu nombre] de Selva Dentro Tulum. 
+                      "Hola {selectedLead.name}, habla [Tu nombre] de Real Estate CRM. 
                       Te contacto porque veo que has mostrado interés en nuestros desarrollos. 
                       {selectedLead.source === 'Referido' && 'Además, [nombre del referido] me comentó que podrías estar interesado en conocer más sobre nuestras opciones de inversión.'}
                       ¿Tienes unos minutos para platicar?"

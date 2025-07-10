@@ -1,5 +1,5 @@
 /*
-  # Esquema Inicial - Selva Dentro Tulum Dashboard
+  # Esquema Inicial - Real Estate CRM Dashboard
 
   1. Tablas Principales
     - `users` - Usuarios del sistema (brokers y admins)

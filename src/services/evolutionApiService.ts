@@ -441,9 +441,9 @@ class EvolutionApiService {
   async sendWelcomeMessage(instanceName: string, number: string, customerName: string): Promise<any> {
     const message = `¡Hola ${customerName}! 👋
 
-Gracias por tu interés en Selva Dentro Tulum. Soy tu asesor personal y estoy aquí para ayudarte a encontrar la propiedad perfecta.
+Gracias por tu interés en Real Estate CRM. Soy tu asesor personal y estoy aquí para ayudarte a encontrar la propiedad perfecta.
 
-🏝️ *Selva Dentro Tulum* - Donde la naturaleza se encuentra con el lujo
+🏝️ *Real Estate CRM* - Donde la naturaleza se encuentra con el lujo
 
 ¿Te gustaría que te envíe información sobre nuestros desarrollos disponibles?`;
 
@@ -492,7 +492,7 @@ ${meetingLink ? `🔗 *Link:* ${meetingLink}` : '📍 *Ubicación:* Oficina de V
 
 Espero que estés muy bien. Quería hacer seguimiento después de ${lastInteraction}.
 
-¿Has tenido oportunidad de revisar la información que te compartí sobre Selva Dentro Tulum?
+¿Has tenido oportunidad de revisar la información que te compartí sobre Real Estate CRM?
 
 Estoy aquí para resolver cualquier duda que puedas tener y ayudarte en tu proceso de decisión.
 
