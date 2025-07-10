@@ -9,8 +9,10 @@ const Login: React.FC = () => {
   const [mode, setMode] = useState<'login' | 'register'>('login');
   const [name, setName] = useState('');
   const [role, setRole] = useState('broker');
+  const [showUpdatePassword, setShowUpdatePassword] = useState(false);
+  const [newPassword, setNewPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const { login, register, error } = useAuth();
+  const { login, register, error, updateUserPassword } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,8 +42,80 @@ const Login: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50 via-slate-50 to-teal-100 flex items-center justify-center p-4">
-      <div className="max-w-md w-full">
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
+            <div className="max-w-md w-full">
+        {showUpdatePassword ? (
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
+            <h2 className="text-xl font-bold text-slate-900 mb-4">Actualizar Contraseña</h2>
+            <p className="text-slate-600 mb-6">Ingresa tu correo y la nueva contraseña.</p>
+            <form
+              onSubmit={async (e) => {
+                e.preventDefault();
+                setIsLoading(true);
+                const result = await updateUserPassword(newPassword);
+                setIsLoading(false);
+                if (result.success) {
+                  setShowUpdatePassword(false);
+                  setNewPassword('');
+                  // Optionally show a success message
+                } else {
+                  // Optionally show an error message
+                }
+              }}
+              className="space-y-6"
+            >
+              <div>
+                <label htmlFor="email-update" className="block text-sm font-medium text-slate-700 mb-2">
+                  Correo electrónico
+                </label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                  <input
+                    id="email-update"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                    placeholder="tu@real_estate.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="new-password" className="block text-sm font-medium text-slate-700 mb-2">
+                  Nueva Contraseña
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400" />
+                  <input
+                    id="new-password"
+                    type="password"
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                    placeholder="••••••••"
+                    minLength={6}
+                    required
+                  />
+                </div>
+              </div>
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white py-3 px-4 rounded-lg font-medium hover:from-teal-600 hover:to-teal-700 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isLoading ? 'Actualizando...' : 'Actualizar Contraseña'}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowUpdatePassword(false)}
+                className="w-full mt-2 text-center text-sm text-slate-500 hover:text-slate-700"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
           {/* Header */}
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -59,8 +133,8 @@ const Login: React.FC = () => {
               <h3 className="text-sm font-semibold text-slate-700 mb-2">Credenciales de prueba:</h3>
               <div className="text-xs text-slate-600 space-y-1">
                 <p><strong>Brokers:</strong> mafer@real_estate.com, mariano@real_estate.com, pablo@real_estate.com, jaquelite@real_estate.com, raquel@real_estate.com</p>
-                <p><strong>Admin:</strong> admin@real_estate.com</p>
-                <p><strong>Contraseña:</strong> password123</p>
+                <p><strong>Admin:</strong> admin@softvibes.com</p>
+                <p><strong>Contraseña:</strong> HolaMundo</p>
               </div>
             </div>
           )}
@@ -171,7 +245,7 @@ const Login: React.FC = () => {
           </form>
 
           {/* Switch mode */}
-          <div className="mt-6 text-center">
+                    <div className="mt-6 text-center">
             <button
               type="button"
               onClick={switchMode}
@@ -183,6 +257,18 @@ const Login: React.FC = () => {
               }
             </button>
           </div>
+
+          {mode === 'login' && (
+            <div className="mt-4 text-center">
+              <button
+                type="button"
+                onClick={() => setShowUpdatePassword(true)}
+                className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
+              >
+                ¿Olvidaste tu contraseña?
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

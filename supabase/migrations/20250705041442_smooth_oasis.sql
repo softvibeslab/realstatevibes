@@ -18,7 +18,7 @@ INSERT INTO users (id, name, email, role, avatar, permissions) VALUES
     ('550e8400-e29b-41d4-a716-446655440003', 'Pablo', 'pablo@real_estate.com', 'broker', 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
     ('550e8400-e29b-41d4-a716-446655440004', 'Jaquelite', 'jaquelite@real_estate.com', 'broker', 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
     ('550e8400-e29b-41d4-a716-446655440005', 'Raquel', 'raquel@real_estate.com', 'broker', 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['leads:read', 'leads:write', 'meetings:read', 'meetings:write']),
-    ('550e8400-e29b-41d4-a716-446655440006', 'Admin', 'admin@real_estate.com', 'admin', 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['*'])
+    ('550e8400-e29b-41d4-a716-446655440006', 'Admin', 'admin@softvibes.com', 'admin', 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop', ARRAY['*'])
 ON CONFLICT (email) DO NOTHING;
 
 -- =============================================

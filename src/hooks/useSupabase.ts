@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { localDataService } from '../services/localDataService';
+import { supabaseService } from '../services/supabaseService';
 import { RefreshCw } from 'lucide-react';
 import type { User } from '../types';
 
@@ -44,16 +44,27 @@ export const useSupabase = (): SupabaseHookReturn => {
     initializeLocal();
   }, []);
 
-  const signIn = async (email: string, password: string) => {
+    const signIn = async (email: string, password: string) => {
     try {
-      // Simular login local
-      const userExists = await localDataService.getUserByEmail(email);
-      if (userExists && password === 'password123') {
-        setUser(userExists);
-        localStorage.setItem('current_user', JSON.stringify(userExists));
-        return { success: true, data: userExists };
+      const { data, error } = await supabaseService.signIn(email, password);
+      if (error) {
+        return { success: false, error: error.message };
+      }
+      if (data.user) {
+        setUser(data.user as User);
+        localStorage.setItem('current_user', JSON.stringify(data.user));
+        return { success: true, data: data.user };
       }
       return { success: false, error: 'Credenciales incorrectas' };
+    } catch (error) {
+      return { success: false, error: (error as Error).message };
+    }
+  };
+
+  const updateUserPassword = async (password: string) => {
+    try {
+      await supabaseService.updateUserPassword(password);
+      return { success: true };
     } catch (error) {
       return { success: false, error: (error as Error).message };
     }
@@ -120,6 +131,7 @@ export const useSupabase = (): SupabaseHookReturn => {
     loading,
     connected,
     signIn,
+    updateUserPassword,
     signOut,
     getUserPointsSummary,
     getLeaderboard,

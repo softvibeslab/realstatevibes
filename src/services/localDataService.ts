@@ -90,7 +90,7 @@ class LocalDataService {
       {
         id: '6',
         name: 'Admin',
-        email: 'admin@real_estate.com',
+        email: 'admin@softvibes.com',
         role: 'admin',
         avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
         permissions: ['*'],

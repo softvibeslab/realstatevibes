@@ -330,6 +330,17 @@ class SupabaseService {
     }
   }
 
+  async updateUserPassword(password: string) {
+    try {
+      const { data, error } = await supabase.auth.updateUser({ password });
+      if (error) throw error;
+      return data;
+    } catch (error) {
+      console.error('Error updating user password:', error);
+      throw error;
+    }
+  }
+
   async signOut() {
     try {
       const { error } = await supabase.auth.signOut();
@@ -671,7 +682,7 @@ class SupabaseService {
           },
           {
             name: 'Admin',
-            email: 'admin@real_estate.com',
+            email: 'admin@softvibes.com',
             role: 'admin',
             avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop',
             permissions: ['*'],
